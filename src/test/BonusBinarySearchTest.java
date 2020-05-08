@@ -13,7 +13,17 @@ public class BonusBinarySearchTest {
 
     @Test
     public void presentEntryReturnsCorrectIndex() {
-        assertEquals(binarySearch(testArray, 4), 2);
+        assertEquals(binarySearch(testArray, 10), 5);
+    }
+
+    @Test
+    public void presentEntryReturnsCorrectIndexForFirstValue() {
+        assertEquals(binarySearch(testArray, 0), 0);
+    }
+
+    @Test
+    public void presentEntryReturnsCorrectIndexForLastValue() {
+        assertEquals(binarySearch(testArray, 18), 9);
     }
 
     @Test
